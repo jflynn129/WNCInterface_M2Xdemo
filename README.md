@@ -3,7 +3,7 @@ HTTP implmented M2X access
 
 This example program uses the ARM mbed HTTP client library to send/receive data to/from [AT&amp;T's M2X 
 service](https://m2x.att.com/) using the AT&T Cellular IoT Starter Kit from Avnet 
-(http://cloudconnectkits.org/product/att-cellular-iot-starter-kit).  This kit uses the 
+(http://cloudconnectkits.org/product/att-cellular-iot-starter-kit).  This kit contains a 
 [FRDM-K64F](https://developer.mbed.org/platforms/FRDM-K64F/) from NXP.
 
 **NOTE**: This doc is specific to using the AT&T Cellular IoT Starter Kit so ensure that the 
@@ -12,18 +12,24 @@ service](https://m2x.att.com/) using the AT&T Cellular IoT Starter Kit from Avne
 M2X-HTTP Example Program
 ========================
 
-This M2X-HTTP Example Program shows how to 
+This M2X-HTTP Example Program shows how to:
+
 1. Setting up a M2X device.
-1. Setup the development environment using the [mbed online compiler](https://mbed.org/compiler/).
-2. How to modify the source code so it interacts with your M2X device
-3. Expected execution outcome
+
+2. Setup the development environment using the [mbed online compiler](https://mbed.org/compiler/).
+
+3. How to modify the source code so it interacts with your M2X device.
+
+4. Expected execution outcome.
 
 Setting up an M2X Device
 ==========================
 1. Signup for an [M2X Account](https://m2x.att.com/signup).
+
 2. You will need to access the following information from the M2X account to modify the example program:
 2.1 Obtain the _Master Key_ from the Master Keys tab of your [Account Settings](https://m2x.att.com/account) screen.
 2.2 Create a [Device](https://m2x.att.com/devices) and obtain its _Device ID_.
+
 3. Review the [M2X API Documentation](https://m2x.att.com/developer/documentation/overview).
 
 Please consult the [M2X glossary](https://m2x.att.com/developer/documentation/glossary) if you have questions about any M2X specific terms.
@@ -70,9 +76,7 @@ Modify source code for your M2X device
 ======================================
 
 
-To modify the example code (main.cpp), please follow these steps so your device variables are properly configured. 
-
-The variables you need to modify are in main.cpp as described below:
+To modify the example code (main.cpp), please follow these steps so your device variables are properly configured.  The variables you need to modify are in main.cpp as described below:
 
 M2X API Key
 -----------
@@ -119,7 +123,7 @@ char name[] = "Wake Forest";                              // Name of current loc
 Using the M2XMQTTClient library
 =========================
 
-In the M2XStreamClient, the following API functions are provided:
+The M2XStreamClient, uses the following API functions:
 
 * `updateStreamValue`: Send stream value to M2X server
 * `postDeviceUpdates`: Post values from multiple streams to M2X server
@@ -148,7 +152,7 @@ static const int E_JSON_INVALID = -5;
 Update stream value
 -------------------
 
-The following functions will post one single value to a stream:
+The following functions will post a single value to a stream:
 
 ```
 template <class T>
@@ -280,7 +284,7 @@ to the IoT Kit, perform the following steps:
 
 When the program runs, the output will look similar to:
 
-    Start m2x-demo-all by initializng the network
+    Start m2x-http-demo by initializng the network
     WNC Module IS initialized (07).
     IP Address: 10.61.137.203 
     

@@ -96,7 +96,7 @@ int main() {
   double temp=0.00;  //we will just increment these 0.01 each time through the loop
   double humid=0.00; //we will just increment these 1 each time through the loop wrapping at 100
 
-  printf("Start m2x-demo-all by initializng the network" CRLF);
+  printf("Start m2x-http-demo by initializng the network" CRLF);
   response = wnc.init();                     
   printf("WNC Module %s initialized (%02X)." CRLF, response?"IS":"IS NOT", response);
   if( !response ) {
