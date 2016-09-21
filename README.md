@@ -63,9 +63,9 @@ Setting the development environment
          this point,  use http://mbed.org/users/citrusbyte/code/jsonlite/.
          
    2.6) Create the mbed-rtos and mbed libraries.
-         Righ click on the WNCInterface_M2Xdemo program entry.  Select 'Import Library' from the drop-down, then 'From Import Wizard'.  At
-         this point, enter 'mbed' in the search box and search.  Multiple entries will be displayed.  highlight 'mbed' and 'mbed-rtos'
-         and select 'import'.
+         Righ click on the WNCInterface_M2Xdemo program entry.  Select 'Import Library' from the drop-down, then 
+         'From Import Wizard'.  At this point, enter 'mbed' in the search box and search.  Multiple entries will be displayed.  
+         highlight 'mbed' and 'mbed-rtos' and select 'import'.
 
 3. You now have all the components for the example program. If you don't modify the _Master Key_ and _Device ID_ the program
    will utilize a device that may or may not work.  It is recomedned that you replace these values with your device's information
